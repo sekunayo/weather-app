@@ -2,6 +2,7 @@ import React from 'react'
 import { HighlightCard } from '../../components/HighlightCard'
 import { TempUnit } from '../../components/TempUnit'
 import WeatherSummaryCard from '../../components/WeatherSummaryCard'
+import { checkIfDateIsTheSame } from '../../utils'
 import { styles } from './styles'
 
 interface WeeklyViewProps {
@@ -20,7 +21,7 @@ const WeeklyView = ({ data }: WeeklyViewProps) => {
                     {
                         data?.forecast?.forecastday?.map?.((element: any, index: number) => {
                             return (
-                                <WeatherSummaryCard key={index + 1} fahValue={element?.day?.maxtemp_f} celValue={element?.day?.maxtemp_c} date={element?.date} icon={element?.day?.condition?.icon} />
+                                Boolean(checkIfDateIsTheSame(new Date(element?.date), new Date(data?.current?.last_updated))) === true ? null : <WeatherSummaryCard key={index + 1} fahValue={element?.day?.maxtemp_f} celValue={element?.day?.maxtemp_c} date={element?.date} icon={element?.day?.condition?.icon} />
                             )
                         })
                     }
@@ -29,10 +30,10 @@ const WeeklyView = ({ data }: WeeklyViewProps) => {
                 <div className={styles.weeklyViewHighlights}>
                     <h4 className={styles.weeklyViewHeading}>Today's Highlights</h4>
                     <div className={styles.weeklyViewHighlightsList}>
-                        <HighlightCard title='wind status' amount={7} unit="mph" />
-                        <HighlightCard title='humidity' amount={84} unit="%" />
-                        <HighlightCard title='visibility' amount={6.4} unit="miles" />
-                        <HighlightCard title='air pressure' amount={998} unit="mb" />
+                        <HighlightCard title='wind status' amount={data?.current?.wind_mph} unit="mph" />
+                        <HighlightCard title='humidity' amount={data?.current?.humidity} unit="%" />
+                        <HighlightCard title='visibility' amount={data?.current?.vis_miles} unit="miles" />
+                        <HighlightCard title='air pressure' amount={data?.current?.pressure_mb} unit="mb" />
                     </div>
                 </div>
             </div>

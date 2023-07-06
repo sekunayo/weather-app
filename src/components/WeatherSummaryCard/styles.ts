@@ -42,7 +42,7 @@ const weatherSummaryCardFahTemp = css({
 const weatherSummaryCardIcon = css({
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
 })
 
 export const styles = {

@@ -14,7 +14,7 @@ const todayView = css({
 
 const todayViewTemperature = css({
     color: "#E7E7EB",
-    fontSize: "144px",
+    fontSize: "124px",
     fontStyle: "normal",
     fontWeight: 500,
     lineHeight: "normal"
@@ -60,7 +60,7 @@ const todayViewDate = css({
     lineHeight: "normal",
     display: "flex",
     justifyContent: "space-between",
-    width: "150px",
+    width: "200px",
     alignItems: "center"
 })
 

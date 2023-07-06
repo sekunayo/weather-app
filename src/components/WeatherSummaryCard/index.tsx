@@ -1,4 +1,5 @@
 import React from 'react'
+import { checkIfDateIsTheSame } from '../../utils';
 import { styles } from './styles'
 
 interface WeatherSummaryCardProps {
@@ -8,9 +9,12 @@ interface WeatherSummaryCardProps {
     icon: string
 }
 export const WeatherSummaryCard = ({ icon, celValue, fahValue, date }: WeatherSummaryCardProps) => {
+    const tomorrow = new Date()
+    tomorrow.setDate(tomorrow.getDate() + 1)
+
     return (
         <div className={styles.weatherSummaryCard}>
-            <h6 className={styles.weatherSummaryCardHeading}>{new Date(date)?.toDateString()}</h6>
+            <h6 className={styles.weatherSummaryCardHeading}>{Boolean(checkIfDateIsTheSame(new Date(date), new Date(tomorrow))) ? "Tomorrow" : new Date(date)?.toDateString()}</h6>
             <div className={styles.weatherSummaryCardIcon}>
                 <img alt="weather" src={icon} />
             </div>

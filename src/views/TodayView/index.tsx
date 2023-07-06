@@ -17,11 +17,11 @@ const TodayView = ({ data }: TodayViewProps) => {
                     <Gps />
                 </button>
             </div>
-            <p className={styles.todayViewTemperature}>15<span className={styles.todayViewTemperatureUnit}>&#8451;</span></p>
-            <p className={styles.todayViewTitle}>Shower</p>
+            <p className={styles.todayViewTemperature}>{data?.current?.feelslike_c}<span className={styles.todayViewTemperatureUnit}>&#8451;</span></p>
+            <p className={styles.todayViewTitle}>{data?.current?.condition?.text}</p>
             <div className={styles.todayViewDescription}>
-                <p className={styles.todayViewDate}><span>Today</span><span>.</span><span>Fri, 5 Jun</span></p>
-                <p className={styles.todayViewLocationContent}>London</p>
+                <p className={styles.todayViewDate}><span>Today</span><span>.</span><span>{new Date(data?.current?.last_updated)?.toDateString()}</span></p>
+                <p className={styles.todayViewLocationContent}>{data?.location?.name}</p>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import { css } from "@emotion/css";
 
 const button = css({
     width: "fit-content",
-    height: "40px",
+    height: "auto",
     padding: "10px 18px",
     color: "#E7E7EB",
     fontSize: "16px",
