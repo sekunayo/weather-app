@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Thin"), local("Raleway-Thin"),
+        url("../assets/fonts/Raleway-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Thin Italic"), local("Raleway-ThinItalic"),
+        url("../assets/fonts/Raleway-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"),
+        url("../assets/fonts/Raleway-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway ExtraLight Italic"), local("Raleway-ExtralightItalic"),
+        url("../assets/fonts/Raleway-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Light"), local("Raleway-Light"),
+        url("../assets/fonts/Raleway-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Light Italic"), local("Raleway-LightItalic"),
+        url("../assets/fonts/Raleway-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Regular"), local("Raleway-Regular"),
+        url("../assets/fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Italic"), local("Raleway-Italic"),
+        url("../assets/fonts/Raleway-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Medium"), local("Raleway-Medium"),
+        url("../assets/fonts/Raleway-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"),
+        url("../assets/fonts/Raleway-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Semi Bold"), local("Raleway-SemiBold"),
+        url("../assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Semi Bold Italic"), local("Raleway-SemiBoldItalic"),
+        url("../assets/fonts/Raleway-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Bold"), local("Raleway-Bold"),
+        url("../assets/fonts/Raleway-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"),
+        url("../assets/fonts/Raleway-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Extra Bold"), local("Raleway-ExtraBold"),
+        url("../assets/fonts/Raleway-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Extra Bold Italic"), local("Raleway-ExtraBoldItalic"),
+        url("../assets/fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Black"), local("Raleway-Black"),
+        url("../assets/fonts/Raleway-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway Black Italic"), local("Raleway-BlackItalic"),
+        url("../assets/fonts/Raleway-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
