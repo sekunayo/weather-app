@@ -5,10 +5,6 @@ const todayView = css({
     height: "100vh",
     width: "459px",
     overflow: "hidden",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-around",
-    alignItems: 'center',
     padding: "42px 46px 52px 46px"
 })
 
@@ -89,6 +85,35 @@ const todayViewNavigation = css({
     width: "100%",
 })
 
+const todayViewCondition = css({
+    width: "202px",
+    height: "234px",
+
+    "& img": {
+        width: "100%",
+        objectFit: "cover",
+        height: "100%"
+    }
+})
+
+const todayViewSidebar = css({
+    display: "none",
+    '&[data-display="true"]': {
+        display: "block"
+    }
+})
+
+const todayViewContent = css({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: 'center',
+    height: "100%",
+    width: "100%",
+    '&[data-display="true"]': {
+        display: "none"
+    }
+})
 
 export const styles = {
     todayView,
@@ -99,5 +124,8 @@ export const styles = {
     todayViewDescription,
     todayViewDate,
     todayViewNavigationIcon,
-    todayViewNavigation
+    todayViewNavigation,
+    todayViewSidebar,
+    todayViewContent,
+    todayViewCondition
 }
